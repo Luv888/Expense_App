@@ -23,4 +23,19 @@ bun install
   bun run dev
 ```
 
+## 🐳 Docker
+
+### 🔧 Build the Docker Image
+
+```bash
+docker build -t expense-tracker .
+```
+
+### Run Command
+
+```bash
+docker run -p 3000:3000 --env-file .env expense-tracker
+```
+
+
 This project was created using `bun init` in bun v1.1.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
